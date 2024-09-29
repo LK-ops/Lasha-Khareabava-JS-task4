@@ -163,6 +163,12 @@ console.log(weatherData);
 weatherData.Tbilisi.pollutionLevel  = "Moderate";
 weatherData.Batumi.pollutionLevel  = "High";
 
-weatherData[Tbilisi]
+for ( let i = 0; i < key.length; i++){
+    console.log(weatherData[key[i]].airQuality)
+    console.log(weatherData[key[i]].forecast)
+    console.log(weatherData[key[i]].humidity)
+    console.log(weatherData[key[i]].wind)
+}
 
-console.log(weatherData);
+console.log("In Batumi high temperature :" + weatherData.Batumi.temperature.high)
+console.log("In Tbilisi evening forecast conditions: " + weatherData.Tbilisi.forecast.evening.conditions)
